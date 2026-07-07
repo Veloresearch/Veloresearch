@@ -1,76 +1,300 @@
-# Velo Research – The Memory Layer for AI
+# ⚡ Velocity — Native AI Execution Stack
 
-### "Models forget. Velo remembers."
+### Existing models. No retraining. Verified execution.
 
-Current AI is slow. We’ve been sold "infinite context windows" that are actually just expensive, noisy, and forgetful buckets of text. Every day you start from zero. Every day your model resets. 
+**Velocity is not another AI chat app.**
 
-**Velo ends this Era.**
+Velocity builds **Motify** — a native execution stack for local AI models based on sealed `.mfy` artifacts and **MTA**, the **Motify Transit Architecture**.
 
-Velo is a context runtime that gives today's models a persistent working memory. We don't just push more tokens into a prompt; we manage the state in the runtime layer.
+The chat is only the interface.  
+The execution stack underneath is the product.
 
-[**Try the Local Proof (v0.1) Now**](linkhere)
+Current proof release ships two working MTA paths:
 
----
+- ✅ **MTA Exact** — baseline / parity / verification path
+- ⚡ **MTA Adapt** — no-retraining execution path for existing model families
+- 🧬 **MTA Native** — future native model path designed directly for Velocity
 
-## 🧠 The Thesis: Memory belongs in the Runtime
-
-Most AI systems try to scale by stuffing more files, history, and noise into the model's input. It’s slow, expensive, and it doesn't work. Velo moves memory, context compilation, and state management into a dedicated layer: **Motify**.
-
-*   **Models read tokens.** Velo maintains state.
-*   **Models forget.** Velo writes back.
-*   **Context grows.** Runtime stays bounded.
-
----
-
-## 🛠️ The Velo Stack
-
-### 1. .mfy Artifacts
-Today's open models (like Qwen, Llama) become Velo artifacts. A `.mfy` file packages the model metadata, tokenizer, and runtime policy into a portable format designed for persistent execution.
-
-### 2. Motify Runtime
-The execution path for Velo artifacts. Motify controls exactly what reaches the model. It doesn't feed the model "project chaos"—it feeds it a **Bounded Context Pack**.
-
-### 3. Persistent Working Memory
-Velo stores useful state **outside** the model. 
-*   **Extract:** Identifies decisions and tasks from model output.
-*   **Consolidate:** Merges them into project memory.
-*   **Prune:** Cleans up the noise so the model stays sharp.
+> **Exact proves trust.**  
+> **Adapt ships existing models.**  
+> **Native breaks the ceiling.**
 
 ---
 
-##  Flatline the Noise (The O(1) Curve)
+## 🚀 What is Velocity?
 
-While everyone else’s cost and "noise" grow linearly with their context window, Velo **flatlines** the runtime burden. Your source memory can grow to 100M, but the Context Pack stays inside a configured, bounded budget.
+Velocity is a local AI execution system for `.mfy` model artifacts.
 
-> **Linear growth is a failure. Velo is the flatline.**
+Instead of shipping another wrapper around an existing model, Velocity introduces a full runtime path:
 
----
+```text
+existing model
+→ MTA compiler
+→ sealed .mfy artifact
+→ Velocity runtime
+→ MTA Exact / MTA Adapt
+→ local AI execution
+```
 
-## 🚀 Local Proof Release (v0.1)
+This is not fine-tuning.  
+This is not prompt engineering.  
+This is not another hosted API wrapper.
 
-We believe in code, not just claims. Our v0.1 release is a local terminal tool that lets you:
-*   **Run artifacts locally** (No API required).
-*   **Inspect Memory:** See exactly what Velo decided to retain.
-*   **Inspect the Pack:** See exactly what the model "sees" before execution.
-*   **Benchmark:** Measure how Velo keeps the runtime bounded while your project grows.
-
-### Quick Start
-1. Download the `velo-term` executable from our website.
-2. Load the `qwen3.5-4b-motify.mfy` artifact.
-3. Use `/memory` or `/pack` to see the brain in action.
-
----
-
-## 🤝 Let’s change our future together
-
-We are building a future where AI is personal and persistent. A future where your tools actually listen and learn from you, instead of resetting every time you hit "Enter."
-
-*   **Website:** [veloresearch.com](https://veloresearch.com/)
-*   **Contact:** contact@veloresearch.com
-*   **Mission:** Fixing the biggest flaw in AI.
+**Velocity is building the execution layer underneath local AI models.**
 
 ---
 
-### "Context is a window. Velo is a brain."
+## 🧠 MTA — Motify Transit Architecture
 
-© 2026 VELO RESEARCH. ALL RIGHTS RESERVED.
+**MTA** is the execution architecture inside Motify.
+
+It defines how `.mfy` artifacts are loaded, verified, executed, inspected, and benchmarked.
+
+Velocity currently exposes two working MTA proof paths:
+
+- **MTA Exact**
+- **MTA Adapt**
+
+---
+
+## ✅ MTA Exact
+
+**MTA Exact** is the verification path.
+
+It is designed for baseline comparison, auditability, and parity checks.
+
+Use MTA Exact when you want to verify:
+
+> Does this `.mfy` artifact preserve expected baseline behavior?
+
+MTA Exact exists to build trust.
+
+It gives developers a reference path before evaluating any optimized or adapted execution mode.
+
+---
+
+## ⚡ MTA Adapt
+
+**MTA Adapt** is the current product path.
+
+It runs existing model families through the Motify execution stack as sealed `.mfy` artifacts **without retraining**.
+
+Use MTA Adapt when you want to test:
+
+> Can this existing model run through Motify’s execution path without losing quality?
+
+Current local proof:
+
+```text
+EXACT : ppl 2.373
+ADAPT : ppl 2.364
+Delta : -0.4% vs Exact
+```
+
+This is presented as a quality preservation result on the tested benchmark.
+
+It should not be interpreted as a universal claim that Adapt improves every model in every setting.
+
+The important point is simple:
+
+> **MTA Adapt preserves baseline quality while running through a different execution path.**
+
+---
+
+## 📦 `.mfy` Artifacts
+
+A `.mfy` file is a sealed Motify model artifact.
+
+It packages model payload, tokenizer metadata, runtime configuration, and MTA execution metadata into a portable artifact designed for Velocity.
+
+Current proof artifact:
+
+```text
+qwen3.5-4b-adapt-b32.mfy
+```
+
+The `.mfy` format is loaded by Velocity and executed through Motify.
+
+Hugging Face stores `.mfy` artifacts as regular binary files.  
+Velocity is the runtime that knows how to open and execute them.
+
+---
+
+## 🛠️ Motify Runtime
+
+Motify is the runtime layer behind Velocity.
+
+It manages:
+
+- artifact loading
+- tokenizer setup
+- chat template setup
+- runtime session state
+- MTA path selection
+- Exact / Adapt execution
+- benchmark reporting
+- execution inspection
+
+The goal is to make local model execution inspectable, reproducible, and verifiable.
+
+---
+
+## 🗺️ MTA Execution Map
+
+Velocity exposes the execution surface instead of hiding it.
+
+The runtime can show:
+
+- active MTA path
+- context window usage
+- layer activity
+- KV path
+- FFN path
+- selected execution mode
+- benchmark metrics
+
+This makes the proof inspectable instead of just claimed.
+
+---
+
+## 🧪 Local Proof Release v0.1
+
+We believe in runnable proof, not screenshots.
+
+The v0.1 proof build lets you:
+
+- run `.mfy` artifacts locally
+- use a local terminal chat
+- switch between MTA Exact and MTA Adapt
+- benchmark Exact vs Adapt
+- inspect the MTA execution map
+- test adapted model artifacts locally
+- verify that MTA Adapt does not require retraining
+
+---
+
+## ⚙️ Quick Start
+
+Download the `.mfy` artifact from Hugging Face:
+
+```bash
+hf download veloresearch/qwen3.5-4b-adapt-b32 qwen3.5-4b-adapt-b32.mfy --local-dir ./models
+```
+
+Run it with Velocity:
+
+```bash
+velocity.exe --model ./models/qwen3.5-4b-adapt-b32.mfy
+```
+
+Inside Velocity:
+
+```text
+/mode exact
+/bench ppl
+/mode adapt
+/bench ppl
+/inspect mta
+```
+
+---
+
+## 📊 Current Proof Status
+
+```text
+MTA Exact        — working
+MTA Adapt        — working
+.mfy artifact    — working
+Qwen artifact    — working
+Local chat       — working
+PPL benchmark    — working
+Execution map    — working
+```
+
+Gemma-family MTA proof is also part of the current internal validation path.
+
+MTA Native is the future path for Motify-native models designed directly for Velocity’s execution stack.
+
+---
+
+## 🔥 Why This Matters
+
+Velocity does not compete with Qwen, Gemma, Llama, or other model families.
+
+Velocity builds the execution layer underneath them.
+
+If existing model families can be converted into `.mfy` artifacts, verified through MTA Exact, and executed through MTA Adapt without retraining, then the value is not in one model.
+
+The value is in the artifact standard and runtime.
+
+```text
+model → .mfy → Velocity Runtime → MTA execution → local AI
+```
+
+---
+
+## ❌ What Velocity Is Not
+
+Velocity is not:
+
+- another chat UI
+- a prompt wrapper
+- a hosted API skin
+- a fine-tuning product
+- a claim without a local proof path
+
+Velocity is a local AI execution stack.
+
+---
+
+## 🧬 Roadmap
+
+Current proof:
+
+```text
+Exact  → verification and trust
+Adapt  → existing models through Motify
+Native → future Motify-native execution
+```
+
+The current public proof focuses on **MTA Exact** and **MTA Adapt**.
+
+MTA Native is the next step: models designed directly for Velocity’s execution stack.
+
+---
+
+## 📜 License
+
+This repository may contain `.mfy` artifacts derived from upstream base models.
+
+Model artifacts follow the license of the upstream base model.
+
+Velocity, Motify, MTA, the `.mfy` artifact format, runtime technology, compiler technology, and execution architecture are separate Velocity technologies and may be licensed separately.
+
+This repository contains a packaged model artifact, not the full Velocity runtime source code.
+
+---
+
+## 🔗 Links
+
+- 🌐 Website: [veloresearch.com](https://veloresearch.com/)
+- 📩 Contact: contact@veloresearch.com
+- 📦 Artifact: `qwen3.5-4b-adapt-b32.mfy`
+- 🖥️ Runtime: `velocity.exe`
+
+---
+
+## Don’t trust screenshots.
+
+Run the artifact locally.
+
+```text
+Clone it.
+Run it.
+Verify it.
+Break it.
+```
+
+---
+
+© 2026 Velocity / Velo Research. All rights reserved.
