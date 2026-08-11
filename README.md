@@ -56,7 +56,7 @@ The first public proof is available here:
 |---|---|
 | **Proof repository** | [velocity-mta-proof](https://github.com/Veloresearch/velocity-mta-proof) |
 | **Windows proof build** | [Download VeloSetup.exe](https://github.com/Veloresearch/velocity-mta-proof/releases/latest) |
-| **Model artifact** | [velocity-research/qwen3.5-4b-adapt-b32 on Hugging Face]([https://huggingface.co/velocity-research/qwen3.5-4b-adapt-b32]) |
+| **Model artifact** | [velocity-research/qwen3.5-4b-adapt-b32 on Hugging Face](https://huggingface.co/velocity-research/qwen3.5-4b-adapt-b32) |
 
 The installer can download the `.mfy` artifact automatically from Hugging Face.
 
