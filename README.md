@@ -56,7 +56,7 @@ The first public proof is available here:
 |---|---|
 | **Proof repository** | [velocity-mta-proof](https://github.com/Veloresearch/velocity-mta-proof) |
 | **Windows proof build** | [Download VeloSetup.exe](https://github.com/Veloresearch/velocity-mta-proof/releases/latest) |
-| **Model artifact** | [veloresearch/qwen3.5-4b-adapt-b32 on Hugging Face](https://huggingface.co/veloresearch/qwen3.5-4b-adapt-b32) |
+| **Model artifact** | [velocity-research/qwen3.5-4b-adapt-b32 on Hugging Face]([https://huggingface.co/veloresearch/qwen3.5-4b-adapt-b32](https://huggingface.co/velocity-research/qwen3.5-4b-adapt-b32)) |
 
 The installer can download the `.mfy` artifact automatically from Hugging Face.
 
@@ -341,7 +341,7 @@ velocity.exe
 Manual model download, if preferred:
 
 ```bash
-hf download veloresearch/qwen3.5-4b-adapt-b32 qwen3.5-4b-adapt-b32.mfy --local-dir ./models
+hf download velocity-research/qwen3.5-4b-adapt-b32 qwen3.5-4b-adapt-b32.mfy --local-dir ./models
 ```
 
 Run a specific artifact:
