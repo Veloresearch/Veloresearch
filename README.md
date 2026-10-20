@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
-  <img alt="Velocity. Intelligence with a longer memory." src="banner-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="crew-dark.svg">
+  <img alt="Velocity. Intelligence with a longer memory." src="crew-light.svg" width="100%">
 </picture>
 
 
