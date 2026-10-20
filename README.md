@@ -1,9 +1,8 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
-  <img alt="Velocity" src="banner-light.svg" width="100%">
+  <img alt="Velocity. Intelligence with a longer memory." src="banner-light.svg" width="100%">
 </picture>
 
-<h3 align="center">Local AI with a long memory, on the computer you already own.</h3>
 
 <p align="center">
   <a href="https://veloresearch.com">veloresearch.com</a> ·
