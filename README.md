@@ -1,123 +1,75 @@
-# Velocity
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
+  <img alt="Velocity" src="banner-light.svg" width="100%">
+</picture>
 
-### Building efficient intelligence for the hardware people already own.
+<h3 align="center">Local AI with a long memory, on the computer you already own.</h3>
 
-Velocity is an independent AI research and infrastructure company focused on making advanced intelligence more efficient, local and accessible.
+<p align="center">
+  <a href="https://veloresearch.com">veloresearch.com</a> ·
+  <a href="https://github.com/Veloresearch/velocity-local-services/releases/latest">Download VLS</a> ·
+  <a href="https://x.com/velo_research">X</a> ·
+  <a href="https://huggingface.co/velocity-research">Hugging Face</a>
+</p>
 
-We research new ways to run, scale and interact with AI systems without assuming that progress must always require larger models, larger servers and more centralized infrastructure.
+<br>
 
-Our work starts from a simple question:
+## What we make
 
-> How much intelligence can we make practical with less?
+<table>
+<tr>
+<td width="50%" valign="top">
 
+### [Velocity Local Services](https://github.com/Veloresearch/velocity-local-services)
 
-## What we care about
+The app for running AI models on your own computer. Load any GGUF model and chat with web search, charts, files and voice, or serve it to your other apps through an OpenAI-compatible API and MCP.
 
-### Efficiency
+Windows and Linux · NVIDIA, AMD and Intel graphics · free for personal use
 
-Better AI should not automatically mean more hardware, more memory and more energy.
+[![Stars](https://img.shields.io/github/stars/Veloresearch/velocity-local-services?style=flat-square&color=D99A6C&labelColor=1F1F22&logo=github&logoColor=white)](https://github.com/Veloresearch/velocity-local-services/stargazers)
+[![Release](https://img.shields.io/github/v/release/Veloresearch/velocity-local-services?include_prereleases&style=flat-square&color=CDBFE0&labelColor=1F1F22&label=latest)](https://github.com/Veloresearch/velocity-local-services/releases/latest)
 
-We focus on reducing the resources required to run capable systems.
+</td>
+<td width="50%" valign="top">
 
+### Velocity Context
 
-### Local intelligence
+Memory for local models. A model with an 8K-token window works across up to **32 million tokens** of your documents, chats and code, on a laptop graphics card, with nothing leaving the machine.
 
-AI should be able to run close to the people and systems using it.
+It is built into VLS, and available for businesses.
 
-Local execution improves privacy, ownership, latency and independence from centralized infrastructure.
+[Get in touch](https://veloresearch.com)
 
+</td>
+</tr>
+</table>
 
-### Research before hype
+## Get VLS
 
-We prefer measurable results, reproducible experiments and systems that can be tested.
+**Windows:** download [`VLSSetup.exe`](https://github.com/Veloresearch/velocity-local-services/releases/latest/download/VLSSetup.exe), or in PowerShell:
 
-Claims should survive contact with hardware.
+```powershell
+irm https://github.com/Veloresearch/velocity-local-services/releases/latest/download/install.ps1 | iex
+```
 
+**Linux:**
 
-### Human agency
-
-We believe advanced AI should work beside people, not remove people from meaningful decisions.
-
-Technology should expand human capability while keeping humans in control.
-
-
-### Accessibility
-
-Powerful computing should not be limited to organizations with enormous clusters.
-
-We want advanced AI to become practical on ordinary hardware.
-
+```bash
+curl -fsSL https://github.com/Veloresearch/velocity-local-services/releases/latest/download/install.sh | sh
+```
 
 ## How we work
 
-Velocity operates across AI systems research, runtime architecture, model execution, memory and context systems, and low-level GPU computing.
+- **Efficient first.** Better AI shouldn't need more hardware, more memory and more energy.
+- **Local by default.** Your models, your data, your computer.
+- **Measured, not claimed.** Every number we publish comes with how we got it.
+- **Ship early.** Previews go out often; [issues](https://github.com/Veloresearch/velocity-local-services/issues) shape what comes next.
 
-We work close to the hardware and test ideas on real consumer machines.
+<br>
 
-Our research process is simple:
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Veloresearch/velocity-local-services/raw/main/.github/stars-dark.svg">
+  <img alt="Stars on GitHub" src="https://github.com/Veloresearch/velocity-local-services/raw/main/.github/stars-light.svg" width="100%">
+</picture>
 
-    question
-       ↓
-    prototype
-       ↓
-    measure
-       ↓
-    break it
-       ↓
-    understand why
-       ↓
-    build again
-
-The objective is not to optimize for impressive demos.
-
-The objective is to find architectures that continue working when the scale becomes uncomfortable.
-
-
-## Principles
-
-- Measure before claiming.
-- Keep systems understandable.
-- Make efficiency a first-class constraint.
-- Prefer local ownership over unnecessary dependency.
-- Build for real hardware.
-- Preserve human control.
-- Treat failure as research data.
-- Stay curious enough to challenge existing assumptions.
-
-
-## Research
-
-Velocity explores problems around:
-
-- efficient AI execution
-- long-term and large-scale context
-- persistent machine memory
-- local inference
-- GPU and CUDA execution
-- model architecture
-- runtime systems
-- hardware-aware optimization
-- scalable AI infrastructure
-
-Some ideas will become useful systems.
-
-Some will fail.
-
-Both are part of the work.
-
-
-## Velocity
-
-We are building toward a future where advanced intelligence can be powerful without being wasteful, useful without being centralized, and capable without taking control away from the people using it.
-
-**Build better than you can.**
-
-
-## Links
-
-Website: https://veloresearch.com
-
-Contact: contact@veloresearch.com
-
-
-© 2026 Velocity. All rights reserved.
+<p align="center"><sub>© 2026 Velocity</sub></p>
