@@ -10,7 +10,7 @@
 
 ### Intelligence with longer memory.
 
-We build software that runs AI on your own hardware and gives it a memory far larger than its window.
+An independent AI company. We build intelligence that runs on your own hardware<br>and remembers far more than its window.
 
 <a href="https://veloresearch.com">veloresearch.com</a> &nbsp;·&nbsp;
 <a href="https://github.com/Veloresearch/impulse/releases/latest">Download Impulse</a> &nbsp;·&nbsp;
@@ -21,6 +21,14 @@ We build software that runs AI on your own hardware and gives it a memory far la
 </div>
 
 <br>
+
+## About Velocity
+
+Velocity is independent. No big-tech parent, no cloud to rent your own data back to you. We do our
+own research, build our own products and publish how we measure them.
+
+We work on one problem: AI that remembers far more than it can see at once, fast enough to run on
+the computer you already have. **Momentum** is that memory. **Impulse** is where you use it.
 
 ## Products
 
@@ -35,9 +43,9 @@ We build software that runs AI on your own hardware and gives it a memory far la
 
 ### [Impulse](https://github.com/Veloresearch/impulse)
 
-**Impulse (formerly VLS)** is the app for running AI models on your own computer. Load any GGUF model
-and chat with web search, tools, files and voice, let it use your computer with your permission, or
-serve it to your other apps through an OpenAI-compatible API and MCP.
+**Impulse** is the app for running AI models on your own computer. Load any GGUF model and chat
+with web search, files, charts and voice, let it use your computer with your permission, or serve it
+to your other apps through an OpenAI-compatible API and MCP. Momentum is built in.
 
 Windows and Linux · NVIDIA, AMD and Intel graphics · free for personal use
 
@@ -56,9 +64,9 @@ Windows and Linux · NVIDIA, AMD and Intel graphics · free for personal use
 
 ### [Momentum](https://veloresearch.com/momentum)
 
-**Momentum (formerly Velocity Context)**: your knowledge, within reach. It gives your AI relevant
-evidence from millions of tokens, selecting the passages your model needs within the window it
-already has. Benchmarked across **32M tokens**, configurable up to 1B, processed locally.
+**Momentum** is memory for local models: your knowledge, within reach. A model with an 8K-token
+window works across up to **32 million tokens** of your documents, chats and code, on a laptop
+graphics card. No embeddings, no vector database, nothing leaves the machine.
 
 Built into Impulse, and available for businesses.
 
@@ -70,13 +78,13 @@ Built into Impulse, and available for businesses.
 
 ## Get Impulse
 
-**Windows:** download the [installer](https://github.com/Veloresearch/impulse/releases/latest/download/VLSSetup.exe), or in PowerShell:
+**Windows:** download the [installer](https://github.com/Veloresearch/impulse/releases/latest/download/ImpulseSetup.exe) (small, always fetches the newest version), or in PowerShell:
 
 ```powershell
 irm https://github.com/Veloresearch/impulse/releases/latest/download/install.ps1 | iex
 ```
 
-**Linux:**
+**Linux:** the [AppImage](https://github.com/Veloresearch/impulse/releases/latest/download/Impulse-x86_64.AppImage) or the [.deb](https://github.com/Veloresearch/impulse/releases/latest/download/impulse_amd64.deb) for Debian and Ubuntu, or in a terminal:
 
 ```bash
 curl -fsSL https://github.com/Veloresearch/impulse/releases/latest/download/install.sh | sh
