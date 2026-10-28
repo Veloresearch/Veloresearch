@@ -8,9 +8,7 @@
   <img src="assets/brand/velocity-logo-on-light.svg" alt="Velocity" width="260">
 </picture>
 
-### Intelligence with longer memory.
-
-An independent AI company.
+### An independent AI company.
 
 <a href="https://veloresearch.com">veloresearch.com</a> &nbsp;·&nbsp;
 <a href="https://x.com/velo_research">X</a> &nbsp;·&nbsp;
@@ -20,15 +18,12 @@ An independent AI company.
 
 <br>
 
-Velocity is independent. No big-tech parent, no cloud to rent your own data back to you. We do our
-own research, build our own products and publish how we measure them.
-
-We build AI that remembers far more than it can see at once, and runs on the computer you already have.
+Velocity is independent. No big-tech parent, no one else's roadmap. We work across the whole of AI,
+from research to the products people use every day, and we publish how we measure what we make.
 
 ## How we work
 
 - **Efficient first.** Better AI should not need more hardware, more memory and more energy.
-- **Local by default.** Your models, your data, your computer.
 - **Measured, not claimed.** Every number we publish comes with how we got it.
 - **Ship early.** Previews go out often, and what people report shapes what comes next.
 
