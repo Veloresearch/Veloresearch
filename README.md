@@ -18,8 +18,11 @@
 
 <br>
 
-Velocity is independent. No big-tech parent, no one else's roadmap. We work across the whole of AI,
-from research to the products people use every day, and we publish how we measure what we make.
+<p align="center">
+No big-tech parent. No borrowed roadmap. No permission needed.<br>
+We do the research, we build the products, and we put the numbers on the table.<br>
+From the lab to the apps people open every day, across the whole of AI.
+</p>
 
 ## How we work
 
