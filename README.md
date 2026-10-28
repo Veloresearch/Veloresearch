@@ -1,18 +1,13 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/velocity-crew-dark.svg">
+  <img alt="Velocity. An independent AI company." src="assets/brand/velocity-crew-light.svg" width="100%">
+</picture>
+
 <div align="center">
 
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/velocity-logo-on-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/brand/velocity-logo-on-light.svg">
-  <img src="assets/brand/velocity-logo-on-light.svg" alt="Velocity" width="300">
-</picture>
-
-<br><br>
-
-## An independent AI company.
-
-No big-tech parent. No borrowed roadmap. No permission needed.<br>
+**No big-tech parent. No borrowed roadmap. No permission needed.**<br>
 We do the research, we build the products, and we put the numbers on the table.<br>
 From the lab to the apps people open every day, across the whole of AI.
 
@@ -26,6 +21,8 @@ From the lab to the apps people open every day, across the whole of AI.
 <br><br>
 
 </div>
+
+## How we work
 
 <table>
 <tr>
@@ -53,12 +50,23 @@ Previews go out often, and what people report shapes what comes next.
 </tr>
 </table>
 
-### What we make
+## Why independent
+
+We answer to the people who use what we make, not to a platform. Nothing we build is there to lock
+you in, and nothing we publish is tuned to look better than it is. When a number is not good yet, it
+goes out anyway, with the method beside it.
+
+Independent also means fast. A fix reported in the morning can ship the same week, sometimes the
+same day.
+
+## What we make
 
 - **[Impulse](https://github.com/Veloresearch/impulse)**: run AI models on your own computer.
 - **[Momentum](https://veloresearch.com/momentum)**: memory for local models.
 
-### Now
+More is on the way.
+
+## Now
 
 [![Impulse](https://img.shields.io/github/v/release/Veloresearch/impulse?include_prereleases&label=Impulse&color=7A6688&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Veloresearch/impulse/total?label=downloads&color=7A6688&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/releases)
